@@ -3,9 +3,7 @@ import "./styles/App.css"
 
 function App() {
   return (
-    <div className="App" style={{
-      paddingTop:"min(10%, 80px)"
-    }} >
+    <div className="App">
       <AppHero />
     </div>
   );

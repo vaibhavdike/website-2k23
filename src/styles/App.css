@@ -1,3 +1,8 @@
+#App {
+    width: min(95vw, 1200px);
+    margin-inline: auto;
+}
+
 #AppHero {
 
     height: 100vh;

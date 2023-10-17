@@ -12,7 +12,7 @@ export default function Navbar() {
         setBurgerMenuvisibility(!BurgerMenuvisibility)
     }
 
-    return (
+    return (<>
         <div id="navbar">
             <img src={clublogo} alt="club icon" />
             <div className='navlinks'>
@@ -26,19 +26,21 @@ export default function Navbar() {
                 <div className='BurgerIcon' onClick={toggleBurgerMenu}>
                     <img src={BurgermenuIcon} alt="options" srcset="" />
                 </div>
-                <div id='BurgerMenuLinks' style={{
-                    display: BurgerMenuvisibility ? "flex" : "none"
-                }}>
-                    <div id="BurgerMenucloseicon" onClick={toggleBurgerMenu}>
-                        <img src={closeicon} alt='close' />
-                    </div>
-                    <span className='joinBtn'>Join now</span>
-                    <span>About</span>
-                    <span>Event</span>
-                    <span>gallery</span>
-                    <span>Team</span>
-                </div>
             </div>
         </div>
+        <div id='BurgerMenuLinks' style={{
+            display: BurgerMenuvisibility ? "flex" : "none"
+        }}>
+            <div id="BurgerMenucloseicon" onClick={toggleBurgerMenu}>
+                <img src={closeicon} alt='close' />
+            </div>
+            <span className='joinBtn'>Join now</span>
+            <span>About</span>
+            <span>Event</span>
+            <span>gallery</span>
+            <span>Team</span>
+        </div>
+
+    </>
     )
 }
