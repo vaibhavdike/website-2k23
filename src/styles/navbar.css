@@ -1,0 +1,146 @@
+#navbar {
+    position: fixed;
+    border: 1px solid orange;
+    width: 100%;
+    max-height: 80px;
+    align-items: center;
+    overflow: hidden;
+    display: flex;
+    padding-inline: 2em;
+    justify-content: space-between;
+    user-select: none;
+    background: rgba(255, 255, 255, 0.755);
+    backdrop-filter: blur(10px);
+}
+
+#navbar a {
+    all: unset;
+}
+
+#navbar img {
+    /* height: min(100%, 80px); */
+    height: 88px;
+}
+
+#navbar .navlinks>span:not(.joinBtn):hover {
+    border-bottom: 2px solid #222;
+}
+
+#navbar .navlinks>span {
+    cursor: pointer;
+    transition: 0.3s;
+    width: fit-content;
+    margin: 0 2em;
+    border-bottom: 2px solid #22222200;
+}
+
+#navbar .navlinks {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+}
+
+#navbar .joinBtn:active {
+    transform: scale(0.95);
+}
+
+#navbar .joinBtn:hover {
+    background: #0094ced0;
+}
+
+#navbar .joinBtn {
+    color: white;
+    border-radius: 8px;
+    background: #0092CE;
+    padding: 0.3em 0.8em;
+}
+
+#navbar .BurgerIcon>img {
+    height: 100%;
+    width: 100%;
+    max-width: 50px;
+}
+
+#navbar #BurgerMenu {
+    display: none;
+}
+
+#BurgerMenuLinks {
+    display: flex;
+    justify-content: start;
+    padding: 2em;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    overflow: auto;
+    position: fixed;
+    gap: 2em;
+    top: 0;
+    left: 0;
+    background: #e0dedea6;
+    backdrop-filter: blur(5px);
+    animation: slidein 0.5s ease 1;
+}
+
+@keyframes slidein {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+#BurgerMenuLinks #BurgerMenucloseicon:hover {
+    border: 3px solid black;
+}
+
+#BurgerMenuLinks #BurgerMenucloseicon>img {
+    width: 100%;
+    height: 100%;
+}
+
+#BurgerMenuLinks #BurgerMenucloseicon {
+    position: absolute;
+    border-radius: 50%;
+    padding: 0.3em;
+    top: 1em;
+    right: 1em;
+    font-size: 1.3em;
+    height: 1.3em;
+    width: 1.3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#BurgerMenuLinks .joinBtn:active {
+    transform: scale(0.95);
+}
+
+#BurgerMenuLinks .joinBtn:hover {
+    background: #0094ced0;
+}
+
+#BurgerMenuLinks .joinBtn {
+    color: white;
+    border-radius: 8px;
+    background: #0092CE;
+    padding: 0.3em 0.8em;
+}
+
+
+@media only screen and (max-width: 650px) {
+    #navbar #BurgerMenu {
+        display: block;
+    }
+
+    #navbar .navlinks {
+        display: none;
+    }
+}
