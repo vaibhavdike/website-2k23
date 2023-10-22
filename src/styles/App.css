@@ -1,19 +1,25 @@
 #App {
-    width: min(95vw, 1200px);
+    width: min(100vw, 110em);
+    max-width: 110em;
     margin-inline: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #AppHero {
-
-    height: 100vh;
-    max-height: min(900px, 100vh);
+    max-height: 100vh;
+    width: min(1200px, 100vw);
     background: url(../Assets/Images/mainHeroBg.png);
     /* background-color: black; */
     aspect-ratio: 1472/815;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    margin: auto;
+    margin-inline: auto;
+    margin-top: 5em;
     max-width: 100vw;
     overflow: hidden;
 }
