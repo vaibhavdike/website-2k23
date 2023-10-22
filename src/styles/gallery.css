@@ -1,0 +1,28 @@
+#gallery {
+    width: 100%;
+    height: fit-content;
+}
+
+#gallery .headBar {
+    width: 100%;
+    background-color: #0092CE;
+    padding: 0.5em 3em;
+    text-align: center;
+    color: white;
+}
+
+#gallery .galleryContainer {
+    overflow-x: auto;
+    overflow-y: hidden;
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    justify-content: start;
+    align-items: start;
+}
+
+#gallery .galleryContainer > div > img {
+    width: min(50vw, 450px);
+}

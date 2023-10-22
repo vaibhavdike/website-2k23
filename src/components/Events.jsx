@@ -103,9 +103,7 @@ export default function Events() {
   }
 
   return (
-    <div id='events-section' style={{
-      marginTop: "5em"
-    }}>
+    <div id='events-section'>
       <h1>Events</h1>
       <div id='eventGrid'>
         <EventCardStack />
