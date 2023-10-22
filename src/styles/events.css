@@ -1,0 +1,107 @@
+#events-section a {
+    text-decoration: none;
+    color: rgb(83, 83, 233);
+    cursor: pointer;
+}
+
+#events-section {
+    width: 100%;
+    height: 85vh;
+    max-height: 850px;
+    background: #0092CE;
+    overflow-y: auto;
+    color: #f7f7f7;
+    text-align: center;
+    padding: 1em;
+}
+
+#events-section #eventGrid {
+    max-width: min(1100px, 95%);
+    margin-inline: auto;
+    overflow: auto;
+    margin-top: 3em;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: #f7f7f7;
+    color: #222;
+}
+
+#events-section #eventGrid .EventCardStackContainer:hover {
+    border-top: 3px solid rgb(75, 75, 223);
+}
+
+#events-section #eventGrid .EventCardStackContainer>* {
+    min-width: 100%;
+}
+
+#events-section #eventGrid .EventCardStackContainer .EventCardStack {
+    width: 100%;
+    aspect-ratio: 0.5;
+    display: flex;
+}
+
+#events-section #eventGrid .EventCardStackContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: max(25%, 280px);
+    width: fit-content;
+    transition: 0.1s;
+}
+
+#events-section #eventGrid .EventCardStackContainer .EventcardStackHeader,
+#events-section #eventGrid .EventCardStackContainer .EventCardStackImageCard,
+#events-section #eventGrid .EventCardStackContainer .EventCardStackDetailsCard {
+    border: 0.5px solid #b5b5b5;
+}
+
+#events-section #eventGrid .EventCardStackContainer .EventcardStackHeader {
+    text-align: left;
+    padding: 1.5em 3em 1em 3em;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5em;
+}
+
+#events-section #eventGrid .EventCardStackContainer .EventcardStackHeader p {
+    opacity: 0.5;
+}
+
+#events-section #eventGrid .EventCardStackContainer .EventCardStack .EventCardStackImageCard {
+    width: 100%;
+}
+
+#events-section #eventGrid .EventCardStackContainer .EventCardStack .EventCardStackImageCard img {
+    max-width: 290px;
+    width: 100%
+}
+
+#events-section #eventGrid .EventCardStackContainer .EventCardStack .EventCardStackDetailsCard {
+    padding: 2em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    aspect-ratio: 0.90;
+}
+
+#events-section #eventGrid .EventCardStackContainer .EventCardStack .EventCardStackDetailsCard .formLink:hover {
+    animation: slideRightAnimation 0.6s ease 1;
+}
+
+
+@keyframes slideRightAnimation {
+    from {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(2em);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
