@@ -1,13 +1,13 @@
 import AppHero from "./components/AppHero";
 // import Events from "./components/Events";
-import Gallery from "./components/Gallery";
+// import Gallery from "./components/Gallery";
 import "./styles/App.css"
 
 function App() {
   return (
     <div id="App">
-      {/* <AppHero /> */}
-      <Gallery />
+      <AppHero />
+      {/* <Gallery /> */}
       {/* <Events /> */}
     </div>
   );
