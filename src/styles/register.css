@@ -1,0 +1,17 @@
+.cyan-background {
+    background-color: cyan;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    color: white;
+  }
+  
+  button {
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
