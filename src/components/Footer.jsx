@@ -1,5 +1,5 @@
 import "../styles/footer.css"
-import React, { useState } from 'react'
+import React from 'react'
 import clublogo from '../Assets/Icons/clubLogo.png'
 import instaicon from "../Assets/Icons/instagram.png"
 import facebookIcon from "../Assets/Icons/facebook.png"
