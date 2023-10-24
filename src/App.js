@@ -1,18 +1,16 @@
 import AppHero from "./components/AppHero";
-import Footer from "./components/Footer";
-import "./styles/footer.css"
-
-// import Events from "./components/Events";
-// import Gallery from "./components/Gallery";
+import Events from "./components/Events";
+import Gallery from "./components/Gallery";
+import Testimonials from "./components/Testimonials";
 import "./styles/App.css"
 
 function App() {
   return (
     <div id="App">
       <AppHero />
-      {/* <Gallery /> */}
-      {/* <Events /> */}
-      {/* <Footer/> */}
+      <Events />
+      <Gallery />
+      <Testimonials />
     </div>
   );
 }
